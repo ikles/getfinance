@@ -132,8 +132,7 @@ body {
 
 
 .logo > img {
-  flex: 0 0 auto;
-  margin-right: 17px;
+  flex: 0 0 auto;  
 }
 
 .header {  
@@ -179,9 +178,11 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 96px;
-  li {
-    margin-right: 40px;
+  margin-left: 92px;
+  li {    
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
     a {
       color: rgb(166, 166, 166);
       font-size: 16px;
@@ -229,8 +230,7 @@ body {
   margin-right: 28px;
 }
 
-.header__conts-content {
-  margin-left: 10px;
+.header__conts-content {  
 }
 
 .header__tel {
@@ -238,7 +238,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .header__mail {
@@ -258,13 +258,12 @@ body {
 }
 
 .header__btn {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0 23px;
   height: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 28px;
+  margin-left: 36px;
   border-radius: 10px;
   border: 2px solid rgb(0, 113, 245);
   flex: 0 0 auto;
@@ -674,7 +673,7 @@ section {
 
 body {  
   &.active {
-    background: url("../img/1920.jpg") no-repeat top 9px center;
+    background: url("../img/1920.jpg") no-repeat top 0px center;
     .wrapper {
       opacity: 0.4;
     } 
