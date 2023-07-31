@@ -85,8 +85,8 @@ body {
   overflow-y: scroll;
   z-index: 5;  
   background: rgba(45, 40, 40, 0.5);
-  display: none;
   display: block;
+  display: none;
 }
 
 .modal-form__layout {
@@ -136,8 +136,8 @@ body {
   color: rgb(255, 255, 255);
   font-size: 45px;
   font-weight: 300;
+  padding-right: 40px;    
   margin-bottom: 35px;
-  padding-right: 40px;
   span {
     color: #C0D8FB;
   }
@@ -349,7 +349,7 @@ body {
   max-width: 1700px;  
   background-color: rgb(237, 243, 250);
   border-radius: 50px;
-  padding: 0px 126px 0px 100px;
+  padding: 0px 126px 0px 125px;
 }
 
 .contain {
@@ -359,18 +359,18 @@ body {
   display: flex;
 }
 
-.hero__r,
+
+
 .hero__l {
-  width: 50%;
-}
-.hero__l {
-  padding: 83px 0;
+  padding: 68px 0 99px 0;
+  width: 55%;
 }
 .hero__r {
+  width: 45%;
   position: relative;
   img {
     position: absolute;
-    left: -157px;
+    left: -251px;
     bottom: 0;
   }
 }
@@ -378,6 +378,7 @@ body {
 .hero__title {
   color: rgb(84, 84, 84);
   font-size: 60px;
+  line-height: 1.25;
   span {
     font-weight: 500;
     color: $col;
@@ -385,25 +386,27 @@ body {
 }
 
 .hadvant {
-  margin-top: 40px;
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-top: 48px;
+  margin-left: -5px;
+  margin-right: -5px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 644px;
+  width: 100%;
 }
 
 .hadvant__col {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 50%;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 
 .hadvant__subtitle {
   color: rgb(149, 149, 149);
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 .hadvant__title {
@@ -414,7 +417,7 @@ body {
 
 
 .hero__bot {
-  margin-top: 37px;
+  margin-top: 39px;
   display: flex;
   align-items: center;
 }
@@ -431,7 +434,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   flex: 0 0 auto;
-  margin-right: 80px;
+  margin-right: 37px;
 }
 
 .hero__info {
@@ -439,6 +442,10 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 142%;
+  max-width: 250px;
+  b, strong {
+    font-weight: 500;
+  }
 }
 
 section {
@@ -461,13 +468,16 @@ section {
   padding-left: 25px;
   padding-right: 25px;
   width: 33.333%;
+  
 }
 
 .for__title {
   font-size: 46px;
   color: rgb(84, 84, 84);
   font-weight: 300;    
-  margin-bottom: 58px;
+  line-height: 1.25;
+  margin-top: -12px;
+  margin-bottom: 46px;
 }
 
 .arrow {
@@ -485,7 +495,7 @@ section {
 
 .for__img-w {
   height: 250px;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 
 .for__img {
@@ -505,13 +515,16 @@ section {
   color: #0071F5;
   font-size: 30px;  
   font-weight: 400;  
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   &:hover {
     text-decoration: none;
   }
 }
 
 .help {
+  @media (min-width : 1200px) {
+    padding-top: 186px;
+  }
 }
 
 
@@ -544,7 +557,8 @@ section {
 .help__title {
   color: rgb(84, 84, 84);
   font-size: 45px;
-  margin-bottom: 40px;  
+  margin-top: -6px;
+  margin-bottom: 24px;
 }
 
 
@@ -554,7 +568,7 @@ section {
   font-weight: 300;
   line-height: 1.7;
   max-width: 560px;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
 }
 
 .help__it {  
@@ -563,7 +577,7 @@ section {
   flex-direction: column;  
   border-radius: 20px;
   background: rgb(237, 243, 250);
-  padding: 45px 252px 50px 49px;
+  padding: 48px 252px 50px 49px;
   position: relative;
   height: 316px;
   &:hover {
@@ -575,7 +589,7 @@ section {
   color: rgb(0, 113, 245);
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .help__desc {
@@ -602,7 +616,7 @@ section {
 
 .help__img {
   position: absolute;
-  top: 48px;
+  top: 51px;
   right: 48px;
 }
 
@@ -615,10 +629,11 @@ section {
 
 
 .trust__title {
-  margin-bottom: 100px;
   color: rgb(84, 84, 84);
   font-size: 45px;
   font-weight: 300;
+  margin-top: -4px;
+  margin-bottom: 86px;
   ._blue {
     color: rgb(0, 113, 245);
     font-weight: 500;
@@ -627,24 +642,22 @@ section {
 
 
 .trust__row {
-  margin-left: -66px;
-  margin-right: -66px;
+  margin: 0 -22px;
   display: flex;
+  transform: translate(-6px, 0%);  
 }
 
 .trust__col {
-  padding-left: 66px;
-  padding-right: 66px;
+  padding: 0 22px;
   width: 33.33%;
   position: relative;
   &:not(:last-child) {
-
     &:before {
       content: "";
       display: block;
       position: absolute;
-      top: 60px;
-      right: 34px;
+      top: 57px;
+      right: 76px;
       width: 191px;
       height: 2px;
       background: linear-gradient(rgba(0, 113, 245, 1), rgba(207, 44, 90, 1));
@@ -655,7 +668,7 @@ section {
 }
 
 .trust__num {
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   line-height: 1;
   > div {
     display: inline-block;
@@ -687,6 +700,7 @@ section {
 
   }
   span {
+    margin-left: -20px;
     display: inline-block;
     line-height: 0.8;
     font-size: 63px;
@@ -710,10 +724,11 @@ section {
 
 
 .trust__name {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 300;
   color: rgb(0, 113, 245);
+  line-height: 1.25;
 }
 
 .trust__text {
@@ -721,6 +736,7 @@ section {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.7;
+  max-width: 385px;
 }
 
 .form__title {
@@ -728,7 +744,8 @@ section {
   font-size: 45px;
   font-weight: 300;
   margin-bottom: 16px;
-  line-height: 1.2;
+  line-height: 1.25;
+  margin-top: -9px;
   b,
   strong {
     color: rgb(255, 255, 255);
@@ -752,7 +769,9 @@ section {
 
 
 .form {
-
+  @media (min-width : 1200px) {
+    padding-top: 191px;
+  }
 }
 
 .contain {
@@ -761,7 +780,7 @@ section {
 .form__row {
   border-radius: 20px;
   background: linear-gradient(46deg, rgb(0, 113, 245) 0%, rgb(61, 149, 252) 70.31%, rgb(86, 164, 255) 100%), radial-gradient(194.59% 100% at 100% 53.61%, rgb(49, 139, 245) 0%, rgb(0, 113, 245) 100%);
-  padding: 97px 100px 100px 95px;
+  padding: 97px 100px 100px 96px;
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
@@ -782,7 +801,8 @@ section {
 }
 
 .form__l {
-  width: calc(50% - 40px);
+  padding-right: 80px;
+  flex-grow: 1;
   position: relative;
   z-index: 2;
 }
@@ -797,11 +817,12 @@ section {
   width: 131px;
 }
 
-.form__form {
-  width: calc(50% - 40px);
+.form__form {  
   position: relative;
   z-index: 2;
-
+  max-width: 596px;
+  width: 100%;
+  flex: none;
 }
 
 .form__input {
@@ -838,7 +859,7 @@ section {
 
 .form__label-txt {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 
