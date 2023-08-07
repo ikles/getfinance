@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  font-weight: normal;
+  font-weight: 300;
   margin-top: 0; }
 
 * {
@@ -354,6 +354,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   position: relative;
+  font-weight: 300;
   min-height: 100vh; }
   body.ohi {
     overflow: hidden; }
@@ -1055,7 +1056,8 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .form__row:before {
     content: "";
     display: block;
@@ -1457,6 +1459,48 @@ section {
 .menu-lbl {
   display: none; }
 
+.content {
+  padding-top: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(166, 166, 166, 0.4);
+  border-top: 1px solid rgba(166, 166, 166, 0.4);
+  padding-bottom: 30px; }
+  .content ul {
+    padding-left: 15px;
+    margin: 25px 0 25px 0; }
+    .content ul li {
+      position: relative;
+      padding-left: 15px; }
+      .content ul li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%; }
+      .content ul li:not(:last-child) {
+        margin-bottom: 7px; }
+
+.h2 {
+  color: #545454;
+  font-size: 45px;
+  margin-bottom: 24px;
+  line-height: 1.3; }
+
+.h3 {
+  font-size: 35px;
+  margin: 10px 0 15px 0;
+  line-height: 1.2; }
+
+.h4 {
+  font-size: 25px;
+  margin: 25px 0 15px 0;
+  line-height: 1.2; }
+
 @media (max-width: 1500px) {
   .header__ul {
     margin-left: 42px; }
@@ -1658,6 +1702,7 @@ section {
     background: url("../img/phone3.svg") no-repeat center;
     margin-left: auto;
     margin-right: 20px; }
+  .h2,
   .form__title,
   .trust__title,
   .help__title,
@@ -1940,6 +1985,7 @@ section {
             align-items: flex-end; }
     .hero__r img {
       max-width: 340px; }
+  .h2,
   .form__title, .trust__title, .help__title, .for__title {
     font-size: 26px; }
   .form, section {
@@ -2121,7 +2167,18 @@ section {
   .footer__item + .footer__item {
     margin-top: 19px; }
   .copy {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .h2 {
+    font-weight: 500;
+    margin-bottom: 15px; }
+  .h3 {
+    font-size: 22px;
+    font-weight: 500; }
+  .h4 {
+    font-size: 20px;
+    font-weight: 500; }
+  .content ul {
+    padding-left: 0; } }
 
 .completed-slde-dots {
   position: absolute;
@@ -2176,7 +2233,8 @@ section {
     min-width: 320px; } }
 
 ._red {
-  color: #CC003D; }
+  color: #CC003D;
+  font-weight: 500; }
 
 ._blue {
   color: #0071f5; }
